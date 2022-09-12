@@ -1,6 +1,6 @@
 <template>
-  <button class="home-btn">Dodaj novu lokaciju</button>
-  <SubmitForm />
+  <button @click="showForm = true" class="home-btn">Dodaj novu lokaciju</button>
+  <SubmitForm v-show="showForm" @close="showForm = false" />
 </template>
 
 <script>
@@ -9,6 +9,11 @@ export default {
   name: "Home",
   components: {
     SubmitForm,
+  },
+  data() {
+    return {
+      showForm: false,
+    };
   },
 };
 </script>
