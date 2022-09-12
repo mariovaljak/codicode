@@ -65,9 +65,9 @@ export default {
           "http://localhost:1337/api/locations",
           this.formValues
         );
-        console.log(response.data);
+        console.log(response);
       } catch (error) {
-        console.log(error.response);
+        this.error = error;
       }
     },
   },
