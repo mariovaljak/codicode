@@ -63,11 +63,13 @@ export default {
       try {
         const response = await axios.post(
           "http://localhost:1337/api/locations",
-          this.formValues
+          { data: this.formValues }
         );
         console.log(response);
       } catch (error) {
         this.error = error;
+      } finally {
+        window.reload;
       }
     },
   },
