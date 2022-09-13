@@ -2,7 +2,13 @@
   <div class="heading">
     Spremljene lokacije
     <div class="table" v-for="location in locations" :key="location.id">
+      {{ location.attributes.lat }}
+      {{ location.attributes.lng }}
       {{ location.attributes.address }}
+      {{ location.attributes.house_number }}
+      {{ location.attributes.post_code }}
+      {{ location.attributes.city }}
+      {{ location.attributes.country }}
     </div>
   </div>
 </template>

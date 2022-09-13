@@ -69,6 +69,20 @@ export default {
       } catch (error) {
         this.error = error;
       }
+      const lat = document.getElementById("lat");
+      lat.value = "";
+      const lng = document.getElementById("lng");
+      lng.value = "";
+      const address = document.getElementById("address");
+      address.value = "";
+      const house_number = document.getElementById("house_number");
+      house_number.value = "";
+      const post_code = document.getElementById("post_code");
+      post_code.value = "";
+      const city = document.getElementById("city");
+      city.value = "";
+      const coutry = document.getElementById("country");
+      coutry.value = "";
     },
   },
   emits: ["close"],
@@ -123,6 +137,10 @@ input {
   cursor: pointer;
 }
 
+.btn2:active {
+  background-color: #06b;
+}
+
 .btn3 {
   background-color: #fa423c;
   border: 0;
@@ -131,10 +149,6 @@ input {
   color: #fff;
   border-radius: 15px;
   cursor: pointer;
-}
-
-.btn2:active {
-  background-color: #06b;
 }
 
 .btn3:active {
