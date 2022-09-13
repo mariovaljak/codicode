@@ -68,8 +68,6 @@ export default {
         console.log(response);
       } catch (error) {
         this.error = error;
-      } finally {
-        window.reload;
       }
     },
   },
