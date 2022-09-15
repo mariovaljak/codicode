@@ -2,11 +2,11 @@
   <form @submit="handleSubmit">
     <div>
       <label for="lat">lat</label>
-      <input type="number" id="lat" v-model="formValues.lat" />
+      <input type="number.float()" id="lat" v-model="formValues.lat" />
     </div>
     <div>
       <label for="lng">lng</label>
-      <input type="number" id="lng" v-model="formValues.lng" />
+      <input type="number.float()" id="lng" v-model="formValues.lng" />
     </div>
     <div>
       <label for="address">address</label>
